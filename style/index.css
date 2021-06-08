@@ -45,7 +45,8 @@ header{
 
 .nav_container{
     display: flex;
-    margin-left: 5%;
+    margin-left: 8%;
+    
 }
 
 .bt1{
@@ -184,4 +185,38 @@ footer{
 
 .face:hover{
     width: 85px;
+}
+
+/*Responsive Styles*/
+/*
+max-width scales down - desktop first
+min-width scales up - mobile first
+*/
+@media(max-width: 800px){
+    /*if the screen size is 800px or smaller apply these styles*/
+    
+}
+
+@media(max-width: 500px){
+    /*if the screen size is 500px or smaller apply these styles*/
+    .nav_container{
+        flex-direction:column;
+        align-items: center;
+    
+    }
+
+    .header_div h1{
+        text-align:center;
+    }
+    
+    .content_description{
+        flex-direction:column;
+        align-items: center; 
+
+    }
+    
+    .description{
+        align-items: center;
+        margin-left: 0%;
+    }
 }
